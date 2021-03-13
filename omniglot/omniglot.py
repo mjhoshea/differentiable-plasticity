@@ -263,8 +263,8 @@ def train(paramdict=None):
     imagedata = []
     imagefilenames=[]
 
-    for basedir in ('gdrive/My Drive/project_files/data/omniglot/omniglot-master/images_background',
-                    'gdrive/My Drive/project_files/data/omniglot/omniglot-master/images_evaluation'):
+    for basedir in ('/content/gdrive/MyDrive/project_files/data/omniglot/omniglot-master/images_background',
+                    '/content/gdrive/MyDrive/project_files/data/omniglot/omniglot-master/images_evaluation'):
         alphabetdirs = glob.glob(basedir+'*')
         print(alphabetdirs[:4])
         for alphabetdir in alphabetdirs:
