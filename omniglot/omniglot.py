@@ -262,8 +262,9 @@ def train(paramdict=None):
     print("Loading Omniglot data...")
     imagedata = []
     imagefilenames=[]
-    for basedir in ('./omniglot-master/python/images_background/', 
-                    './omniglot-master/python/images_evaluation/'):
+
+    for basedir in ('./gdrive/My Drive/project_files/data/omniglot/python/images_background/',
+                    './gdrive/My Drive/project_files/data/omniglot/python/images_evaluation/'):
         alphabetdirs = glob.glob(basedir+'*')
         print(alphabetdirs[:4])
         for alphabetdir in alphabetdirs:
